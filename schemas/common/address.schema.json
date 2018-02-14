@@ -11,7 +11,7 @@
   "type": "object",
   "meta:auditable": true,
   "meta:extends": [
-    "https://ns.adobe.com/xdm/common/geocoordinates",
+    "http://schema.org/GeoCoordinates",
     "https://ns.adobe.com/xdm/common/geo"
   ],
   "description": "A postal address. Address could relate to a person's home, work, preferred store location etc.",
@@ -85,8 +85,9 @@
       }
     }
   },
-  "allOf": [{
-      "$ref": "https://ns.adobe.com/xdm/common/geocoordinates"
+  "allOf": [
+    {
+      "$ref": "http://schema.org/GeoCoordinates"
     },
     {
       "$ref": "https://ns.adobe.com/xdm/common/geo"

@@ -9,6 +9,9 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "type": "object",
   "meta:extensible": true,
+  "meta:extends": [
+    "http://schema.org/GeoCoordinates"
+  ],
   "title": "Geo",
   "description": "The geographic related data where an event was observed.",
   "definitions": {
@@ -56,7 +59,7 @@
   },
   "allOf": [
     {
-      "$ref": "https://ns.adobe.com/xdm/common/geocoordinates"
+      "$ref": "http://schema.org/GeoCoordinates"
     },
     {
       "$ref": "#/definitions/geo"
